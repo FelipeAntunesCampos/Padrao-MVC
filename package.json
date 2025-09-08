@@ -12,7 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/GustavoAlvess/Padrao-MVC.git"
   },
-  "keywords": ["MVC", "Back-end"],
+  "keywords": [
+    "MVC",
+    "Back-end"
+  ],
   "author": "Felipe Campos",
   "license": "MIT",
   "bugs": {

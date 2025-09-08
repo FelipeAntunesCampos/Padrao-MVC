@@ -4,17 +4,16 @@ const { herois } = dados;
 // GET /herois - Listar heróis com filtros
 const getAllHerois = (req, res) => {
     const { nome, universo, ativo } = req.query;
+    
     let resultado = herois;
 
     if (nome) {
-        resultado = resultado.filter((h) => 
-            h.nome.toLowerCase().includes(nome.toLowerCase())
+        resultado = resultado.filter((h) => h.nome.toLowerCase().includes(nome.toLowerCase())
         );
     }
     
     if (universo) {
-        resultado = resultado.filter((h) => 
-            h.universo.toLowerCase().includes(universo.toLowerCase())
+        resultado = resultado.filter((h) => h.universo.toLowerCase().includes(universo.toLowerCase())
         );
     }
     
